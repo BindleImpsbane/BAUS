@@ -2,9 +2,16 @@ $navbarBackgroundHighlight: white;
 $navbarBackground: white;
 $btnPrimaryBackground: purple;
 
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+
+
 @import 'bootstrap';
 body{
-    padding-top: 100px;
+	background: url(http://i1352.photobucket.com/albums/q655/eanplatter/71280c64-dc7f-4bfb-bdde-f99cbb8926f4_zpsbd8dbb2d.jpg?t=1381029470);
+	background-repeat: no-repeat;
+	background-size: cover;
+	font-family: 'Lato', sans-serif;
+    padding-top: 140px;
 }
 
 @import 'bootstrap-responsive';
@@ -12,6 +19,8 @@ body{
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
+    height: 550x;
+    padding: 30px;
 }
 
 .footer{
@@ -20,4 +29,22 @@ body{
     a{
         color: $gray;
     }
+}
+
+.navbar-inverse .brand {
+	font-size: 75px;
+}
+
+
+.hero-unit {
+	background: linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -o-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -ms-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -moz-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -webkit-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	padding: 100px;
+}
+
+h1 {
+	padding-bottom: 30px;
 }
