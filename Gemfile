@@ -3,9 +3,15 @@ source 'https://rubygems.org'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.0'
 
-# Use sqlite3 as the database for Active Record
+group :production do
+	gem 'pg'
+	gem 'rails_12factor'
+end
+group :development, :test do 
 gem 'sqlite3'
-gem 'devise'
+end
+# Use sqlite3 as the database for Active Record
+gem 'devise', '~>3.1.0.rc2'
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 gem 'bootstrap-sass'

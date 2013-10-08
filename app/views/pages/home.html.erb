@@ -5,8 +5,12 @@
 	<h1>
 		Media Harbor
 	</h1>
-
-	<p>
-		<%= link_to "Let's Get Started", "#", class: "btn btn-large btn-custom"  %>
-	</p>
+	<% if user_signed_in? %>
+	
+	# welcome to the future son... AKA Member's area.
+	<% else %>
+		<p>
+			<%= link_to "Let's Get Started!", new_user_registration_path, class: "btn btn-large btn-custom"  %>
+		</p>
+		<%end%>
 </div>
