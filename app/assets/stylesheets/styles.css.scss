@@ -1,5 +1,4 @@
-$navbarBackgroundHighlight: white;
-$navbarBackground: white;
+$navbarBackground: cyan;
 $btnPrimaryBackground: purple;
 $body-bg: #ecf0f1;
 $navbar-inverse-bg: #27ae60;
@@ -8,12 +7,21 @@ $brand-primary: #f39c12;
 $jumbotron-bg: #bdc3c7;
 
 @import url(http://fonts.googleapis.com/css?family=Lato:400,700);
-$font-family-sans-serif: 'Lato', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+
+
+@import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
+
+
 
 @import 'bootstrap';
 
 body{
-    padding-top: 100px;
+	background: url(http://i1352.photobucket.com/albums/q655/eanplatter/eaf0a890-27c2-4940-bac1-10a68a25b38a_zps90cf5e52.jpg?t=1381194975);
+	background-repeat: repeat;
+	font-family: 'Lato', sans-serif;
+    padding-top: 75px;
+    color: #22303F	;
 }
 
 @import 'bootstrap-responsive';
@@ -21,8 +29,10 @@ body{
 .navbar-inner{
     @include box-shadow(none !important);
     border: 0;
+    height: 550x;
+    padding: 30px;
+    background: #22303F;
 }
-
 .footer{
     margin-top: 50px;
     color: $grayLight;
@@ -30,12 +40,82 @@ body{
         color: $gray;
     }
 }
+.navbar .brand {
+	font-size: 75px;
+	text-shadow:none;
+	color: white;
 
-.navbar-inner {
-    height: 80px;  
 }
 
-.navbar .brand,
+/* This is to make the Hero Unit transparent without causing the buttons and text to also be transparents */
+.hero-unit {
+	background: linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -o-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -ms-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -moz-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	background: -webkit-linear-gradient(left , rgba(255, 255, 255, 0.156863) 91% , rgba(255, 255, 255, 0.156863) 106%);
+	padding: 100px;
+}
+
+h1 {
+  padding-top: 30px;
+	padding-bottom: 30px;
+	font-family: 'Pacifico', cursive;
+	font-size: 150px !important;
+	font-weight: lighter;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold !important;
+  color: white;
+}
+
+.btn-inverse{
+	background-color: #22303F;	
+}
 .navbar .nav > li > a {
-    padding: 30px 30px 30px 30px;
+	color: white;
+	text-decoration: none;
+	text-shadow:none;
 }
+
+.btn-custom {
+  background-color: hsl(0, 100%, 22%) !important;
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#d60000", endColorstr="#700000");
+  background-image: -khtml-gradient(linear, left top, left bottom, from(#d60000), to(#700000));
+  background-image: -moz-linear-gradient(top, #d60000, #700000);
+  background-image: -ms-linear-gradient(top, #d60000, #700000);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #d60000), color-stop(100%, #700000));
+  background-image: -webkit-linear-gradient(top, #d60000, #700000);
+  background-image: -o-linear-gradient(top, #d60000, #700000);
+  background-image: linear-gradient(#d60000, #700000);
+  border-color: #700000 #700000 hsl(0, 100%, 17%);
+  font-weight: bold;
+  color: white !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.33);
+  -webkit-font-smoothing: antialiased;
+}
+a,
+.hero-unit,
+.btn,
+.navbar-inner,
+.btn-navbar,
+.progress,
+.progress .bar {
+  background-image: none!important;
+}
+
+* {
+  -webkit-box-shadow: none!important;
+     -moz-box-shadow: none!important;
+          box-shadow: none!important;
+
+    text-shadow: none!important;
+
+  -webkit-border-radius: 0!important;
+     -moz-border-radius: 0!important;
+          border-radius: 0!important;
+}
+>>>>>>> 045a9dc48716b5be5b187fba5428f0804ec3f252
