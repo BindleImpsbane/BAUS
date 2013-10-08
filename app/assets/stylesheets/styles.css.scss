@@ -3,15 +3,16 @@ $btnPrimaryBackground: purple;
 
 
 @import url(http://fonts.googleapis.com/css?family=Lato:100,400);
+@import url(http://fonts.googleapis.com/css?family=Pacifico);
 
 
 
 @import 'bootstrap';
 body{
-	background: url(http://i1352.photobucket.com/albums/q655/eanplatter/tileable_wood_texture_zps6a277c1e.png?t=1381189472);
+	background: url(http://i1352.photobucket.com/albums/q655/eanplatter/eaf0a890-27c2-4940-bac1-10a68a25b38a_zps90cf5e52.jpg?t=1381194975);
 	background-repeat: repeat;
 	font-family: 'Lato', sans-serif;
-    padding-top: 140px;
+    padding-top: 75px;
     color: #22303F	;
 }
 
@@ -50,7 +51,17 @@ body{
 }
 
 h1 {
+  padding-top: 30px;
 	padding-bottom: 30px;
+	font-family: 'Pacifico', cursive;
+	font-size: 150px !important;
+	font-weight: lighter;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: bold !important;
+  color: white;
 }
 
 .btn-inverse{
